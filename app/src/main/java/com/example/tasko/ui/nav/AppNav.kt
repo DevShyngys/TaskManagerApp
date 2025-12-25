@@ -97,6 +97,20 @@ fun AppNav(
             )
         }
 
+        composable(Routes.TIPS) {
+            val tipsVm: com.example.tasko.vm.TipsViewModel =
+                androidx.lifecycle.viewmodel.compose.viewModel()
+
+            MainScaffold(navController, title = "Tips") { modifier ->
+                TipsScreen(
+                    tipsVm = tipsVm,
+                    taskVm = vm,
+                    modifier = modifier
+                )
+            }
+        }
+
+
         composable(
             route = Routes.DETAILS,
             arguments = listOf(navArgument("id") { type = NavType.LongType })

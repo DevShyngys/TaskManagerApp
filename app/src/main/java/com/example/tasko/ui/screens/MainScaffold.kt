@@ -21,6 +21,7 @@ fun MainScaffold(
     val items = listOf(
         BottomNavItem.Tasks,
         BottomNavItem.Calendar,
+        BottomNavItem.Tips,
         BottomNavItem.Settings
     )
 

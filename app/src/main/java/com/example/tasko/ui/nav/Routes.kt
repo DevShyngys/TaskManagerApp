@@ -8,6 +8,8 @@ object Routes {
     const val CALENDAR = "calendar"
     const val SETTINGS = "settings"
 
+    const val TIPS = "tips"
+
 
     fun details(id: Long) = "details/$id"
 }

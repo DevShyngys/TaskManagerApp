@@ -4,6 +4,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.Checklist
 import androidx.compose.material.icons.outlined.Event
 import androidx.compose.material.icons.outlined.Settings
+import androidx.compose.material.icons.outlined.Lightbulb
 import androidx.compose.ui.graphics.vector.ImageVector
 
 sealed class BottomNavItem(
@@ -22,6 +23,12 @@ sealed class BottomNavItem(
         label = "Calendar",
         icon = Icons.Outlined.Event
     )
+
+    object Tips : BottomNavItem(
+        route = Routes.TIPS,
+        label = "Tips",
+        icon = Icons.Outlined.Lightbulb)
+
 
     object Settings : BottomNavItem(
         route = Routes.SETTINGS,
